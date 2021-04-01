@@ -1,0 +1,23 @@
+*{margin:0; padding:0}
+
+html, body{width: 100%; height: 100%;}
+#mouse_tracking_background{width: inherit; height: inherit;background: rgb(124, 109, 255);}
+
+
+.eyes{
+    width: 120px; 
+    height: 70px; 
+    background: rgb(255, 255, 255); 
+    border-radius: 50%; 
+    position: relative;
+}
+
+.eyes > div{width: 50px;
+            height: 50px;
+            background: rgb(0, 0, 0);
+            border-radius: inherit;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+}
