@@ -1,23 +1,69 @@
 *{margin:0; padding:0}
 
-.login{
-    width: 500px;
-    height: 50px;
-    border: solid 5px transparent;
-    border-radius: 50px;
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right,  rgba(221, 99, 0, 0.932), #8700d4) border-box;
-    outline: none;
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:center;
+    line-height:50px;
+    transition: 1s;
+}
+
+#wrap{
+    width: inherit;
+    height: inherit;
+    background: rgb(1, 1, 22)
+}
+
+.btn{
+    width: 230px;
+    height: 60px;
+    border: solid 2px white;
     cursor: pointer;
-    -webkit-transition: background 2s border-box;
-    transition: background-color 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
-.login:hover{
-    background: black padding-box;
-    animation-name: change_background;
-    animation-duration: 1s;
+.sub_btn{
+    width: 220px;
+    height: 50px;
+    border: solid 1px white;
+    position:relative
 }
 
+.main_panel{
+    width: 100%;
+    height: 50px;
+    right: 0;
+    background:rgb(1, 1, 22);
+    transition: 1s;
+    position: absolute;
+    z-index: 1;
+}
 
+.main_panel > p{
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
-.sign_up{width: 500px; height:50px; border-radius: 30px;}
+.slide_panel{
+    width: 100%;
+    height: 50px;
+    background:white;
+    box-shadow: 5px 5px 5px gray inset;
+    position: absolute;
+    z-index: 0;
+}
+
+.btn:hover .main_panel{
+    width: 0;
+}
